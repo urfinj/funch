@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta name="keywords" content="funch, funch.me, fun challenge, 10 second video challenge" />
+		<meta name="description" content="Funch is a 10 Second Video Challenge App. You can record your talents and upload the clips to challenge with others around the world." />
+		<meta name="author" content="Melephant inc" />
+		<meta property="og:title" content="Funch - A 10 Second Video Challenge" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="http://vsus.it/funch/funch_logo/funch_logo/Funch_Logo_Red_Tiny.png" />
+		
+		<title>FUNCH - A 10 Second Social Video Challenge</title>
+		
+		<link rel="shortcut icon" href="images/preview/favicon.ico" />
+		
+		<!-- CSS style -->
+		<link rel="stylesheet" href="css/bootstrap.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/flexslider.css"/>
+		<link rel="stylesheet" href="css/animate.css"/>
+		<link rel="stylesheet" href="css/supersized.css" media="screen" />
+		<!--<link rel="stylesheet" href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" type="text/css">-->
+		<link rel="stylesheet" href="css/classic-081711.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/preview.css" />
+		
+		<!-- Google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		
+		<!-- HTML5 Video Background CSS -->
+		<link rel="stylesheet" type="text/css" href="css/video-background.css" />  
+
+
+		<style type="text/css">
+			#mc_embed_signup{background:#222; clear:both; font:14px Helvetica,Arial,sans-serif;  width:240px; margin-left: auto; margin-right: auto;}
+			/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		</style>
+
+		<script type="text/javascript">var switchTo5x=true;</script>
+		<script src="https://kit.fontawesome.com/d9f1014e06.js" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<!--Use this code for https:-->
+		<!--<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>-->
+		<script type="text/javascript">stLight.options({publisher: "c7a89cc9-1842-41ad-9b56-39caf4a589d3", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+		<!--<a href=“https://plus.google.com/102136834721165042258” rel=“publisher”></a>-->
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		
+		<!-- Preview (Remove) -->
+		<script type="text/javascript" src="js/preview.js"></script>
+		<script type="text/javascript" src="js/jquery.scroll.js"></script>
+		
+		<!-- swfObject -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		
+		<!-- Modernizr -->
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		
+		<!--HTML5 Video Background JS-->
+		<script type="text/javascript" src="js/jquery.video-background.js"></script>
+
+		
+		<!-- Create HTML5 Video Background -->
+		<script type="text/javascript">
+			var api_fsvideo;
+			var api_example1, api_example2, api_example3;
+		
+			$(document).ready(function() {
+				
+				//Fullscreen video background
+				api_fsvideo = $(".fullscreen-video-bg").videoBG({
+					mp4:"videos/woman-trying-to-lift.mp4",
+					ogg:"videos/woman-trying-to-lift.mp4",
+					poster:"videos/woman-trying-to-lift.mp4",
+					overlayColor:"#000000",
+					overlayOpacity:0.2,	
+					muted:true		
+				});
+				
+				//Parallax video
+				$(".parallax-video-bg").videoBG({
+					mp4:"videos/header_spin.mp4",
+					ogg:"videos/header_spin.mp4",
+					poster:"videos/header_spin.mp4",
+					overlayColor:"#000000",
+					overlayOpacity:0.6,
+					parallax:false,	
+					muted:true			
+				});	
+			});		
+		</script>
+		
+	</head>
+	
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="header-inner wrapper clearfix">
+			
+				<!-- Logo -->
+				<div class="left-float">
+					<div class="logo">
+						<img src="funch_logo/Funch_Logo_Red_Small.png" alt="Funch - 10 Sec Video Challenge" />
+					</div>
+				</div>
+				
+				<!-- Navigation -->
+				<div class="right-float">
+					<nav class="clearfix">
+						<ul>
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#features">Features</a></li>
+							<li><a href="#parallax">Download</a></li>
+						</ul>
+					</nav>
+				</div>
+				
+			</div>
+		</header>
+		
+		<!-- Page body -->
+		<div class="page-body">
+		
+			<!-- Home -->
+			<section id="home" class="no-padding">
+				<div class="section-inner">
+				
+					<div class="fullscreen-video-bg"></div>
+					
+					<!-- Caption -->					
+					<div class="caption">
+						<div class="caption-inner">
+							<div class="logo"><center><img src="funch_logo/Funch_Logo_Red_Big.png"></center></div><br><br>
+							<div class="title">SHOW OFF<br></div>
+								<div class="title2">YOUR<br></div>
+								<div class="title3">10 SECONDS<br></div>
+							<div class="fluid"><br><br><br><br>
+								<!--<span>
+									<a class="button blue" onclick="api_fsvideo.videoBgPlay();">Play</a>
+									<a class="button blue" onclick="api_fsvideo.videoBgPause();">Pause</a>
+									<a class="button blue" onclick="api_fsvideo.videoBgRewind();">Rewind</a>
+									<a class="button blue" onclick="api_fsvideo.videoBgTogglePlay();">Toggle Playing Status</a>
+									<a class="button blue" onclick="api_fsvideo.videoBgToggleSound();">Toggle Sound</a>
+									<a class="button blue" onclick="api_fsvideo.videoBgToggleHide();">Toggle Hiding Video</a>
+								</span>-->
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</section>
+			
+			<!-- Features -->
+			<section id="features">
+				<div class="section-inner">
+					
+					<div class="wrapper">
+						<!-- Section title -->
+						<div class="section-title">
+							<h2>Features</h2>
+							<div class="seperator"><span></span></div>
+							<h4 class="subtitle">"Anyone can challenge, but not everyone will survive."</h4>
+						</div>
+						
+						<!-- Columns -->
+						<div class="column-section clearfix">
+							<div class="column one-fourth align-center">
+								<i class="fas fa-video fa-5x"></i>
+								<h4><strong>10 Second Video</strong></h4>
+								<p>Capture amazing clips with “Continuous” and “Hold-to-Record” video modes!</p>
+						  	</div>
+						  	
+							<div class="column one-fourth align-center">
+								<i class="fas fa-user fa-4x"></i> <i class="fas fa-user fa-3x"></i>
+								<h4><strong>10 Challengers</strong></h4>
+								<p>Funch is a social video app with a fun twist on challenges. Show off your talent through friendly competition!</p>
+						  	</div>
+							
+							<div class="column one-fourth last-col align-center">
+								<i class="fas fa-clock fa-5x"></i> <i class="fas fa-heart fa-2x"></i>
+								<h4><strong>24Hr Competition</strong></h4>
+								<p>For 24 hours, get the most “hearts” and your video can rise to the top!</p>
+						  	</div>
+						</div>
+					</div>
+				
+				</div>
+			</section>
+			
+			<!-- Parallax video -->
+			<section id="parallax" class="parallax-video-bg">
+				<center><br><h6>Try it now! <br>Download Funch today!</h6>
+				            <a rel="nofollow" href="https://play.google.com/store/apps/details?id=com.funch.android" target="_blank"><img src="images/googleplaystore.png" width=225 height=78></a>
+				            <a rel="nofollow" href="https://itunes.apple.com/kr/app/funch-10cho-dong-yeongsang/id1006594087?mt=8" target="_blank"><img src="images/appleappstore.png" width=225 height=78></a></center>
+            	<div class="section-inner">
+                	<div class="wrapper2 align-center">
+                		<div class="funch_video_player">
+	                		<video width="256" height="256" controls>
+	  							<source src="videos/cover_song.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="funch_video_player">
+							<video width="256" height="256" controls>
+	  							<source src="videos/gum_2.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="funch_video_player">
+							<video width="256" height="256" controls>
+	  							<source src="videos/marshmallow.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="funch_video_player">
+							<video width="256" height="256" controls>
+	  							<source src="videos/spin_this.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="funch_video_player">
+							<video width="256" height="256" controls>
+	  							<source src="videos/toast.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+						<div class="funch_video_player last-col">
+							<video width="256" height="256" controls>
+	  							<source src="videos/ugly_face.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+				</div><br><br>
+			</section>
+
+            <!-- Footer -->
+			<section class="footer small-padding">
+				<div class="section-inner">
+					
+					<div class="wrapper">
+
+						<!-- Section title -->
+						<div class="section-title no-margin">
+							<h4 class="subtitle">Share with Your Friends</h4><br><center>
+								<span class='st_facebook_large' displayText='Facebook'></span>
+								<span class='st_twitter_large' displayText='Tweet'></span>
+								<span class='st_googleplus_large' displayText='Google +'></span>
+								<!--<span class='st_tumblr_large' displayText='Tumblr'></span>-->
+								<span class='st_email_large' displayText='Email'></span></center>
+							<br><div class="seperator"><span></span></div><br>
+						</div>
+
+						<ul class="social" align=center>
+							<li>Follow us on: 
+							<a rel="nofollow" href="http://facebook.com/funchapp" target="_blank"><i class="fab fa-facebook"></i></a></li>
+							<li><a rel="nofollow" href="https://twitter.com/funchapp_SEAsia" target="_blank"><i class="fab fa-twitter"></i></a></li>
+							<li><a rel="nofollow" href="https://www.youtube.com/channel/UCQznuNcMvrMlV20QItxRImw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+							<li><a  rel="nofollow"href="http://funchapp.tumblr.com" target="_blank"><i class="fab fa-tumblr"></i></a></li>
+							<li><a rel="nofollow" href="http://instagram.com/funchapp" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+
+						<!-- Begin MailChimp Signup Form -->
+						<div class="seperator"><span></span></div><br>
+						<center>Subscribe to our newsletter. <br>
+						We’ll send you updates on new information and product news!</center>
+							<div id="mc_embed_signup">
+								<form action="//facebook.us10.list-manage.com/subscribe/post?u=5204688023478790f9628fd74&amp;id=8963d9e1cb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								    <div id="mc_embed_signup_scroll">
+										<div class="mc-field-group">
+											<label for="mce-EMAIL"></label>
+											<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+										</div>
+										<div id="mce-responses" class="clear">
+											<div class="response" id="mce-error-response" style="display:none"></div>
+											<div class="response" id="mce-success-response" style="display:none"></div>
+										</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								    	<!--<div style="position: absolute; left: -5000px;"><input type="text" name="b_5204688023478790f9628fd74_8963d9e1cb" tabindex="-1" value=""></div>-->
+								    	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+								    </div>
+								</form>
+							</div>
+						<center>Copyright © 2015 All Rights Reserved. Melephant Inc.</center>	
+						<center><a href="https://evernetica.com">Web development by Evernetica</a></center>	
+					</div>	
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
